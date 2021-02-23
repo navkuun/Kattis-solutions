@@ -24,10 +24,7 @@ typedef vector<vl> vvl;
 
 int main () { 
   ios_base::sync_with_stdio(0);cin.tie(0);
-	
-	
-
-	 
+ 
   int n , t; cin>>n>>t;
   if(t == 1){
   	std::vector<int> v;
