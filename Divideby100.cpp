@@ -22,6 +22,7 @@ typedef vector<pl> vpl;
 typedef vector<vi> vvi;
 typedef vector<vl> vvl;
 
+
 int main () { 
   ios_base::sync_with_stdio(0);cin.tie(0);
 	
