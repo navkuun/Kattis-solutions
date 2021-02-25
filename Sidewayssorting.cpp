@@ -25,11 +25,12 @@ typedef vector<vl> vvl;
 int main () { 
   ios_base::sync_with_stdio(0);cin.tie(0);
 	
-//represent each column as an int sum of alpha's then use 
-  // read in as coluns
+
 int r,c;
+//reading testcases
 while(cin>>r>>c && (r != 0 && c != 0)){
 	char a[r][c];
+	//input rows, columns
 	for (int i = 0; i < r; ++i)
 	{
 		for(int j =0 ;j<c;j++){
@@ -37,6 +38,7 @@ while(cin>>r>>c && (r != 0 && c != 0)){
 		}
 	}
 	std::vector<string> v;
+	//add charecter's as columns to a vector
 	for(int i = 0;i<c;i++){
 		string x = "";
 		for(int j =0 ;j<r;j++){
@@ -45,6 +47,7 @@ while(cin>>r>>c && (r != 0 && c != 0)){
 		v.pb(x);
 	}
 	string temp;
+	// stable bubble sort, convert to lower as says in questions to ignore case
 	for(int j = 0;j<v.size()-1;j++){
 		for(int i =j+1;i<v.size();i++){
 			string t1 = "", t2= "";
@@ -57,6 +60,7 @@ while(cin>>r>>c && (r != 0 && c != 0)){
 			}
 		}
 	}
+	//outputing each row, as it's now sorted
 	for (int i = 0; i < r; ++i)
 	{
 		for(int j = 0 ;j<c;j++){
